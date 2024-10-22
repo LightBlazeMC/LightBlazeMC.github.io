@@ -1,0 +1,23 @@
+body {
+  	background-color: lightblue;
+}
+
+h1 {
+  	color: #006DFF;
+	font-family: albertSans;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: albertSans;
+	src: url("../fonts/Albert_Sans/static/AlbertSans-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	  font-family: albertSans;
+	  src: url("../fonts/Albert_Sans/static/AlbertSans-Bold.ttf");
+	  font-weight: bold;
+	  font-style: normal;
+}
