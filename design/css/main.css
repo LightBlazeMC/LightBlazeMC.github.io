@@ -8,6 +8,23 @@ h1 {
 	font-weight: bold;
 }
 
+p {
+  	color: #000071;
+	font-family: albertSans;
+}
+
+.header	{
+	border-style: solid;
+	border-color: #7F96FF;
+	margin-bottom: 64px;
+}
+
+.main-page	{
+	border-style: dotted;
+	text-align: center;
+}
+
+
 @font-face {
 	font-family: albertSans;
 	src: url("../fonts/Albert_Sans/static/AlbertSans-Regular.ttf");
