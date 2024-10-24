@@ -1,11 +1,15 @@
 body {
-  	background-color: lightblue;
+  	background-color: #567DBB;
+	border-radius:8px;
 }
 
 h1 {
   	color: #006DFF;
 	font-family: albertSans;
 	font-weight: bold;
+	font-size: 32px;
+	margin-left: 12px;
+	
 }
 
 p {
@@ -14,14 +18,29 @@ p {
 }
 
 .header	{
-	border-style: solid;
+	border-style: none;
 	border-color: #7F96FF;
 	margin-bottom: 64px;
+	font-family: albertSans;
+	display: flex;
+	border-radius:8px;
+	/*background-color: #B2EFFF;*/
+	background-image:linear-gradient(to right, #00F0FF, #F1BBFF);
+	/*position:fixed;*/
 }
 
 .main-page	{
 	border-style: dotted;
 	text-align: center;
+}
+
+.header .header-links	{
+	/*align: right;*/
+	font-size: 18px;
+	margin-top: 10px;
+	margin-right: 12px;
+	flex: auto;
+	
 }
 
 
