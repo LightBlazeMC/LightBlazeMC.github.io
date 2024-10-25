@@ -1,6 +1,9 @@
 body {
   	/*background-color: #567DBB;*/
 	background: linear-gradient(#7a8bb3, #64749a);
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -58,10 +61,10 @@ p {
 }
 
 .footer	{
-	font-size: 10px;
+	font-size: 12px;
 	text-align: center;
 	border-style: solid;
-	margin-top: 16px;
+	margin-top: auto;
 }
 
 
