@@ -3,12 +3,18 @@
 <head>
 	<title>Mac's Portfolio</title>
 	<link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
-	<script src="custom-header.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+             $(function(){
+                  $('#header').load('header.html');
+				  $('#footer').load('footer.html');
+             });
+        </script>
 </head>
 <link rel="stylesheet" type="text/css" href="design\css\main.css">
 <body>
 	<!-- HEADER -->
-	<custom-header></custom-header>
+	<div id="header"></div>
 	
 	<!-- MAIN BODY -->
 	<div class="main-page">
@@ -17,17 +23,8 @@
 	</div>
 	
 	<!-- FOOTER -->
-	<div class="footer">
-		<p><i>Made by me in HTML/CSS/JS :)</i></p>
-	</div>
+<div id="footer"></div>
 	
 </body>
 	
 </html>
-
-
-<div class="header">
-	<img class="logo-img" src="resources/logo.png" alt="Logo" width="80" height="80">
-	<h1 align="left">Mac's Portfolio</h1>
-	<div class="header-links" align="right"><p><a class="headerbtn" href="index.html">Home</a> | <a class="headerbtn" href="gamedev.html">Game Dev</a> | <a class="headerbtn" href="media.html">Media</a> | <a class="headerbtn" href="other.html">Other Projects</a> | <a class="headerbtn" href="about.html">About/Contact</a></p></div>
-</div>
