@@ -1,92 +1,90 @@
 body {
-  	/*background-color: #567DBB;*/
-	background: linear-gradient(#7a8bb3, #64749a);
-	min-height: 100vh;
+    /*background-color: #567DBB;*/
+    background: linear-gradient(#7a8bb3, #64749a);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
-  	color: #B4BBC9;
-	font-family: albertSans;
-	font-weight: bold;
-	font-size: 32px;
-	margin: auto;
-	margin-left: 8px;
-	text-align: center;
+    color: #B4BBC9;
+    font-family: albertSans;
+    font-weight: bold;
+    font-size: 32px;
+    margin: auto;
+    margin-left: 8px;
+    text-align: center;
 }
 
 p {
-  	color: #262e39;
-	font-family: albertSans;
+    color: #262e39;
+    font-family: albertSans;
 }
 
-.header	{
-	border-style: none;
-	border-color: #7F96FF;
-	margin-bottom: 16px;
-	font-family: albertSans;
-	display: flex;
-	border-radius:8px;
-	/*background-color: #B2EFFF;*/
-	background-image: linear-gradient(to right, #455271,#58678a);
-	/*position:fixed;*/
+.header {
+    border-style: none;
+    border-color: #7F96FF;
+    margin-bottom: 16px;
+    font-family: albertSans;
+    display: flex;
+    border-radius: 8px;
+    /*background-color: #B2EFFF;*/
+    background-image: linear-gradient(to right, #455271, #58678a);
+    /*position:fixed;*/
 }
 
-.header .header-links	{
-	/*align: right;*/
-	font-size: 18px;
-	margin: auto;
-	margin-right: 8px;
-	flex: auto;
+.header .header-links {
+    /*align: right;*/
+    font-size: 18px;
+    margin: auto;
+    margin-right: 8px;
+    flex: auto;
 }
-	
-.header .headerbtn		{
-	padding: 6px 6px;
-	border-style: solid;
+
+.header .headerbtn {
+    padding: 6px 6px;
+    border-style: solid;
     border: 2px;
     border-radius: 8px;
     color: #374252;
     background-color: #7a8bb3;
-    text-decoration: none;	
+    text-decoration: none;
 }
 
-.logo-img	{
-	margin: auto;
-	margin-left: 8px;
+.logo-img {
+    margin: auto;
+    margin-left: 8px;
 }
 
-.main-page	{
-	border-style: dotted;
-	text-align: center;
+.main-page {
+    border-style: dotted;
+    text-align: center;
+    flex: 1;
 }
 
-.normal-text	{
-	text-align: left;
-	margin: 8px;
+.normal-text {
+    text-align: left;
+    margin: 8px;
 }
 
-.footer	{
-	font-size: 12px;
-	text-align: center;
-	border-style: solid;
-	margin-top: auto;
-	position: fixed;
-	Width: 100%;
-	bottom: 0;
-}
-
-
-@font-face {
-	font-family: albertSans;
-	src: url("../fonts/Albert_Sans/static/AlbertSans-Regular.ttf");
-	font-weight: normal;
-	font-style: normal;
+.footer {
+    font-size: 12px;
+    text-align: center;
+    border-style: solid;
+    margin-top: 8px;
+    width: 100%;
 }
 
 @font-face {
-	  font-family: albertSans;
-	  src: url("../fonts/Albert_Sans/static/AlbertSans-Bold.ttf");
-	  font-weight: bold;
-	  font-style: normal;
+    font-family: albertSans;
+    src: url("../fonts/Albert_Sans/static/AlbertSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: albertSans;
+    src: url("../fonts/Albert_Sans/static/AlbertSans-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
 }
