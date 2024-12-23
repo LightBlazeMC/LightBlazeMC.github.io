@@ -71,6 +71,9 @@ p {
 	text-align: center;
 	border-style: solid;
 	margin-top: auto;
+	position: fixed;
+	Width: 100%;
+	bottom: 0;
 }
 
 
