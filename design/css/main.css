@@ -90,6 +90,16 @@ table {
   font-size: 18px;
 }
 
+.invisible-table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0px auto;
+  padding: 12px;
+  font-family: albertSans;
+  font-size: 18px;
+  border: hidden;
+}
+
 th,
 td {
   border: 1px solid #9caeff;
