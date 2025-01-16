@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Mac's Portfolio</title>
-	<link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
-	<script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script>
-             $(function(){
-                  $('#header').load('header.html');
-				  $('#footer').load('footer.html');
-             });
-        </script>
-</head>
-<link rel="stylesheet" type="text/css" href="design\css\main.css">
-<body>
-	<!-- HEADER -->
-<div id="header"></div>
-	
-	<!-- MAIN BODY -->
-	<div class="main-page">
-		<h1>Game Development Projects</h1>
-		<p class="normal-text">Here are some of my game development projects. </p>
-		<table class="portfolio-table">
-			<tr>
-			  <td style="width:10%"><img src="resources/AnalogDeity_icon.png" alt="Analog Deity icon" style="width:100px;height:100px;"></td>
-			  <td>Analog Deity</td>
-			  <td style="width:40%; font-size: 14px; font-style: italic;"><p>description</p></td>
-			  <td><img src="resources/android-logo.png" alt="Android icon" style="width:50px;height:50px;"> <img src="resources/unity-logo.png" alt="Unity icon" style="width:50px;height:50px;"></td>
-			  <td style="width:10%"><a class="table-button" href="gamedev_analogdeity.html">See more</a></td>
-			</tr>
-		  </table> 
-	</div>
-	
-	<!-- FOOTER -->
-<div id="footer"></div>
-	
-</body>
-	
+  <head>
+    <title>Mac's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <link rel="stylesheet" type="text/css" href="design\css\main.css" />
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- MAIN BODY -->
+    <div class="main-page">
+      <h1>Game Development Projects</h1>
+      <p class="normal-text">Here are some of my game development projects.</p>
+      <table class="portfolio-table">
+        <tr>
+          <td style="width: 10%">
+            <img
+              src="resources/AnalogDeity_icon.png"
+              alt="Analog Deity icon"
+              style="width: 100px; height: 100px"
+            />
+          </td>
+          <td>Analog Deity</td>
+          <td style="width: 40%; font-size: 14px; font-style: italic">
+            <p>
+              Compare images of people/scenes and deduce which one is the real
+              image and which one is a ‘deity’. Guess wrong and you will lose
+              lives, guess right and you will be rewarded accordingly.
+            </p>
+          </td>
+          <td>
+            <img
+              src="resources/android-logo.png"
+              alt="Android icon"
+              style="width: 50px; height: 50px"
+            />
+            <img
+              src="resources/unity-logo.png"
+              alt="Unity icon"
+              style="width: 50px; height: 50px"
+            />
+          </td>
+          <td style="width: 10%">
+            <a class="table-button" href="gamedev_analogdeity.html">See more</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </body>
 </html>
