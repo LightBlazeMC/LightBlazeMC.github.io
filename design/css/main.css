@@ -160,7 +160,7 @@ tr {
 }
 
 div.scroll-container {
-  background-color: #333333;
+  background-color: #00000000;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
