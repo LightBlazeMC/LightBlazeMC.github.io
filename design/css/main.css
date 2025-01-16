@@ -163,6 +163,13 @@ div.scroll-container img {
   height: 100%;
 }
 
+.highlight {
+  background-color: yellow;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
 @font-face {
   font-family: albertSans;
   src: url("../fonts/Albert_Sans/static/AlbertSans-Regular.ttf");
