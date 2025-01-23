@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mac's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <link rel="stylesheet" type="text/css" href="design/css/main.css" />
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- MAIN BODY -->
+    <div class="main-page">
+      <h1>DJ Simulator - Individual Blog</h1>
+      <a class="return-text" href="gamedev_djsimulator.html"> << Go back </a>
+      <p class="normal-text">
+        See the latest progress updates for DJ Simulator on this blog page.
+        Every blog entry is for that given week, starting on Monday and ending
+        on Sunday. Week commencing has been abbreviated to 'w/c'.
+      </p>
+      <br />
+      <table class="blog-post">
+        <tr>
+          <td>
+            <p class="blog-date">w/c 20th January 2025</p>
+            <img src="/resources/blog-files/djsim-blog1.png" height="300px" />
+            <p class="blog-caption">Animation state machine for NPCs.</p>
+            <p class="blog-text">
+              It is a high priority that the NPCs within the game have a rich
+              Animation Controller. Currently, the NPCs will dance no matter
+              what is happening in the game. To fix this, I have implemented
+              logic that checks what state the NPCs should be in, and sets it
+              accordingly to that animation. Now the NPCs can either idle if
+              they do not like the music or there is no music playing, or dance
+              if music is playing and it is a genre that they like. Logic is
+              present for the NPCs walking in and out of the scene, however it
+              is not detectable or triggerable within the game yet.
+            </p>
+            <img src="/resources/blog-files/djsim-blog2.png" height="200px" />
+            <p class="blog-caption">
+              Code responsible for NPC animation logic.
+            </p>
+            <p class="blog-text">
+              I have also optimised the GitHub repository to properly ignore
+              Unity’s large temporary files. This meant that I could also
+              uninstall LFS. This allows for less commit errors and generally
+              greater compatibility.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="blog-date">w/c 28th October 2024</p>
+            <img src="/resources/blog-files/djsim-blog3.png" height="400px" />
+            <p class="blog-caption">Logic responsible for NPC balancing.</p>
+            <p class="blog-text">
+              Today, I implemented major features into the game. Ensuring that a
+              duplicate number of NPCs does not spawn is crucial. There cannot
+              be an equal number of NPCs spawning in, since that would cause a
+              dilemma where the player will not be able to select the correct
+              genre to get awarded points. Now, the game runs a check to see if
+              there are no equal numbers of NPCs, and if so, adjusts the number
+              of NPCs to be all different.
+            </p>
+            <img src="/resources/blog-files/djsim-blog4.png" height="400px" />
+            <p class="blog-caption">
+              Code responsible for NPC animation logic.
+            </p>
+            <p class="blog-text">
+              A scoring system has also been implemented. All major sensing
+              mechanics have been implemented, however, currently the game only
+              awards points for playing any track, and also awards points for
+              playing the most popular genres. Coroutines had to be used, and a
+              lot of conditional statements. Since I have already anticipated
+              appropriate music genre sensing, implementing scoring conditions
+              was relatively simple. However, major parts of code had to be
+              re-written for the spawning of NPCs and also allowing the scripts
+              to globally manipulate clones of NPCs.
+            </p>
+          </td>
+        </tr>
+      </table>
+      <br />
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="footer"></div>
+    </footer>
+  </body>
+</html>
