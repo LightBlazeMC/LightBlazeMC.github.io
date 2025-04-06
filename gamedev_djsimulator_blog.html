@@ -29,6 +29,81 @@
       <table class="blog-post">
         <tr>
           <td>
+            <p class="blog-date">w/c 24th March 2025</p>
+            <p class="blog-text">
+              After the migration to the new NPC management systems, a lot of
+              the game logic became incompatible and was either buggy or broken.
+              This week, I have tested for bugs and fixed them, ensuring that
+              the game is fully functional with the new NPC management logic.
+              The game failed to properly sense and count NPCs, so that has now
+              been fixed, and variable conflicts causing erroneous data have
+              been solved.
+            </p>
+            <img src="/resources/blog-files/djsim-blog5.jpeg" height="400px" />
+            <p class="blog-caption">
+              Shortening and tightening the NPC animation.
+            </p>
+            <p class="blog-text">
+              I also took this opportunity to further improve the animation
+              logic for the NPCs. I have shortened animation times, in order for
+              the animation logic to respond and flow much faster. I have used
+              Unity’s synchronisation tool that shows if the animation will loop
+              well. This has allowed me to reduce the animation times, while
+              maintaining a smooth and natural animation.
+            </p>
+            <img src="/resources/blog-files/djsim-blog8.jpeg" height="300px" />
+            <p class="blog-caption">
+              Entrance for the NPCs to spawn in, with point lights to simulate
+              ambiance.
+            </p>
+            <p class="blog-text">
+              I have also built an entrance within the map for the NPCs to spawn
+              inside of, ensuring that they do not randomly show up in the
+              corner. To make it look more interesting, I have added point
+              lights to simulate an appropriate ambiance. Doing this enhances
+              the level design and also ensures a natural way for the NPCs to
+              spawn in.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="blog-date">w/c 17th March 2025</p>
+            <img src="/resources/blog-files/djsim-blog6.jpeg" height="400px" />
+            <p class="blog-caption">
+              Extract of the new NPC Manager responsible for randomly creating
+              NPCs.
+            </p>
+            <p class="blog-text">
+              Following the interim demo, it has been agreed that a system for
+              NPC spawning and de-spawning needs to be in place. Currently, the
+              game generates and auto-balances the NPC count at the start of the
+              game, and never again. This leads to very boring gameplay. I need
+              to figure out a way for the NPCs to spawn in and de-spawn during
+              the playthrough, as to keep the game alive and interesting. I can
+              then use the NPC animations implemented earlier in order to make
+              the movements seem natural. For this to happen, a major NPC
+              Manager and NPC Animation Manager overhaul is in place.
+            </p>
+            <img src="/resources/blog-files/djsim-blog7.jpeg" height="450px" />
+            <p class="blog-caption">
+              Function within the NPC Animation Manager responsible for
+              animating the walk-in of NPCs.
+            </p>
+            <p class="blog-text">
+              The NPCs now spawn in at a set location. They will then start
+              walking after a random amount of time, for a random period of
+              time. This is to better space out the NPCs so that they do not
+              clip and crowd. They will then randomly select a direction angle,
+              and walk a random distance. All of the randomisation is in place
+              in order to better and more naturally simulate a crowd and to
+              create spacing. Walking, idling and dancing animations are now
+              properly controlled and triggered by the NPC Animation Manager.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <p class="blog-date">w/c 20th January 2025</p>
             <img src="/resources/blog-files/djsim-blog1.png" height="300px" />
             <p class="blog-caption">Animation state machine for NPCs.</p>
@@ -59,12 +134,12 @@
           <td>
             <p class="blog-date">w/c 4th November 2024</p>
             <p class="blog-text">
-              Today, I have finished off the PowerPoint slides for the project
-              proposal. The majority of information was already written in my
-              game design document, however additional information had to be
-              written due to it being previously missing or outdated since the
-              last iteration of the prototype. Screenshots and a video were also
-              made, and then edited in Adobe Premiere Pro.
+              This week, I have finished off the PowerPoint slides for the
+              project proposal. The majority of information was already written
+              in my game design document, however additional information had to
+              be written due to it being previously missing or outdated since
+              the last iteration of the prototype. Screenshots and a video were
+              also made, and then edited in Adobe Premiere Pro.
             </p>
           </td>
         </tr>
@@ -74,13 +149,13 @@
             <img src="/resources/blog-files/djsim-blog3.png" height="400px" />
             <p class="blog-caption">Logic responsible for NPC balancing.</p>
             <p class="blog-text">
-              Today, I implemented major features into the game. Ensuring that a
-              duplicate number of NPCs does not spawn is crucial. There cannot
-              be an equal number of NPCs spawning in, since that would cause a
-              dilemma where the player will not be able to select the correct
-              genre to get awarded points. Now, the game runs a check to see if
-              there are no equal numbers of NPCs, and if so, adjusts the number
-              of NPCs to be all different.
+              This week, I implemented major features into the game. Ensuring
+              that a duplicate number of NPCs does not spawn is crucial. There
+              cannot be an equal number of NPCs spawning in, since that would
+              cause a dilemma where the player will not be able to select the
+              correct genre to get awarded points. Now, the game runs a check to
+              see if there are no equal numbers of NPCs, and if so, adjusts the
+              number of NPCs to be all different.
             </p>
             <img src="/resources/blog-files/djsim-blog4.png" height="400px" />
             <p class="blog-caption">
