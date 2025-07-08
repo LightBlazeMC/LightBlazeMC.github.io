@@ -20,8 +20,8 @@
 
 title: Mac's Portfolio
 email: maciek12292@gmail.com
-#description: >- # this means to ignore newlines until "baseurl:"
-#This site is a work in progress.
+description: >- # this means to ignore newlines until "baseurl:"
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "lightblazemc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
