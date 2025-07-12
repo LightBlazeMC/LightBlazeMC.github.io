@@ -19,7 +19,3 @@ An end game condition is a must and even at this late point in development is st
 {% include figure popup=true image_path="/assets/blog-imgs/djsim-blog12.jpeg" alt="Early version of the game over screen." caption="_Early version of the game over screen._" %}
 
 When the timer is over, the game will display the player’s score and return to the main menu. This has been implemented within the game manager, and a game over manager. Currently, the screen is very basic since it is in the testing stage, but a design in line with the aesthetics of the rest of the game will be implemented eventually.
-
-{% include figure popup=true image_path="/assets/blog-imgs/djsim-blog8.jpeg" alt="Entrance for the NPCs to spawn in, with point lights to simulate ambiance." caption="_Entrance for the NPCs to spawn in, with point lights to simulate ambiance._" %}
-
-I have also built an entrance within the map for the NPCs to spawn inside of, ensuring that they do not randomly show up in the corner. To make it look more interesting, I have added point lights to simulate an appropriate ambiance. Doing this enhances the level design and also ensures a natural way for the NPCs to spawn in.
