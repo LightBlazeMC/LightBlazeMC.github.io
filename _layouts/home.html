@@ -4,6 +4,27 @@ layout: archive
 
 {{ content }}
 
+<!-- Featured Projects Section -->
+<h3 class="archive__subtitle">Featured Projects</h3>
+<div
+  style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-bottom: 2em;
+  "
+>
+  <a href="/dj-simulator" style="display: block">
+    <img
+      src="/assets/icons/dj-sim-logo.png"
+      alt="Project 1"
+      style="width: 180px; height: 120px; object-fit: cover; border-radius: 8px"
+    />
+  </a>
+</div>
+<!-- End Featured Projects Section -->
+
 <h3 class="archive__subtitle">
   {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
 </h3>

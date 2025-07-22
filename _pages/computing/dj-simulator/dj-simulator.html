@@ -7,11 +7,16 @@ header:
   overlay_image: /_pages/computing/dj-simulator/header.jpeg
 ---
 
-You are a DJ that needs to make it big in the nightlife scene. To succeed, you
-must perform excellent DJ sets that score plenty of points. In order to gain
-points, you must ensure you are picking the right tracks for the crowd. Can you
-become the best ranked DJ and climb the points ladder?
-<br />
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/sVggU5CsfT4?si=aEXXAP8dX37KR_5o"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
 <br />
 <b>Unity version:</b> <i>2023.2.20f1 LTS</i>
 <br />
@@ -41,3 +46,37 @@ become the best ranked DJ and climb the points ladder?
 >
   View project repository
 </a>
+
+{% include figure popup=true image_path="/assets/imgs/djsim-diag1.jpeg"
+alt="Diagram explaining audio analysis algorithm." caption="_Diagram explaining
+audio analysis algorithm._" %}
+
+<p>
+  The main goal of DJ Simulator has been for me to develop and showcase my
+  algorithm for reactive environments based on a real-time analysis of raw
+  binary data extracted from music files. I have created a diagram
+  <i>(shown above)</i> that explains how this algorithm works.
+  <br />
+  <br />
+  There is no way for Unity to natively use audio data to generate useful float
+  or integer values that will be able to provide data for lighting intensity or
+  Transforms. This is because audio files contain huge amounts of raw binary
+  data (represented in hexadecimal on the left side of the diagram) that Unity
+  does not know how to make use of.
+</p>
+
+{% include figure popup=true image_path="/assets/imgs/djsim-diag2.jpeg"
+alt="Code snippet detailing my audio analysis algorithm." caption="_Code snippet
+detailing my audio analysis algorithm._" %}
+
+<p>
+  This is where my algorithm comes into play. It analyses the audio spectrum
+  data of the currently playing Unity Audio Source and then collects much
+  smaller data samples into an array, upon which an average value is calculated.
+  The result of this analysis and calculation is a very usable float value, that
+  can then be used to control elements within Unity, such as colour & intensity
+  of lighting, Transform coordinates of objects or even gravity (makes an
+  awesome game idea!).
+  <br />
+  <br />
+</p>
